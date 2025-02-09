@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> To-Do List</h1>
+
+        <div id="authSection">
+            <input type="text" id="username" placeholder="Login">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="register()">Registration</button>
+            <button onclick="login()">Вход</button>
+            <p id="authMessage"></p>
+        </div>
+
+        <div id="taskSection" style="display: none;">
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="Enter the task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+            <button onclick="logout()">Log out</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
